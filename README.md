@@ -16,12 +16,7 @@ duplicatas exatas e linhas 100% vazias (lixo de exportação)
 campos nulos espalhados
 Como tratei os dados
 
-Tudo feito no Editor do Power Query, com cada transformação documentada nas etapas aplicadas.
-
-Dois problemas valem menção porque não são óbvios de primeira:
-
-Bug de localidade no Number.FromText — ao converter texto pra número sem especificar a cultura, o Power Query usa a configuração regional do Windows. Como meu Excel está em pt-BR, ele interpretava 306.87 como se o ponto fosse separador de milhar, virando 30687. Resolvido forçando Number.FromText(texto, "en-US") depois de padronizar o texto pro formato americano.
-
+Tudo feito no Editor do Power Query, com cada transformação documentada nas etapas aplicadas
 
 Estrutura do arquivo
 Dados_Tratados — base limpa, como Tabela do Excel
